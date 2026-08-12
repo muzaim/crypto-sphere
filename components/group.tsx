@@ -2,30 +2,8 @@
 
 import Image from "next/image";
 import React from "react";
-import { Shield, Wallet, TrendingUp } from "lucide-react";
 
 const Group = () => {
-	const features = [
-		{
-			id: 1,
-			title: "Secure Wallet Integration",
-			desc: "Connect your crypto wallet with top-notch encryption and seamless access to manage your digital assets safely.",
-			icon: <Wallet size={40} className="text-blue-400" />,
-		},
-		{
-			id: 2,
-			title: "Real-Time Analytics",
-			desc: "Track your portfolio performance with live market data, advanced charts, and AI-powered insights.",
-			icon: <TrendingUp size={40} className="text-green-400" />,
-		},
-		{
-			id: 3,
-			title: "Advanced Protection",
-			desc: "Enjoy peace of mind with multi-layer security protocols ensuring your funds and transactions stay protected.",
-			icon: <Shield size={40} className="text-purple-400" />,
-		},
-	];
-
 	return (
 		<div className="min-h-screen bg-[#12132a] flex flex-col md:flex-row items-center justify-center px-6 sm:px-10 md:px-20 py-20 text-white overflow-hidden">
 			{/* 🔵 Gambar + Glow */}
@@ -60,12 +38,7 @@ const Group = () => {
 				</h1>
 
 				<p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Fugit, molestias commodi sunt aut odit maxime voluptatibus
-					necessitatibus rerum pariatur veritatis magnam obcaecati
-					officiis quia. Reprehenderit sed labore at dignissimos
-					sequi. Vitae nobis provident animi voluptas repudiandae ea
-					reiciendis labore perspiciatis!
+					CryptoSphere provides both short-term and long-term market forecasts through advanced sentiment indicators, historical pattern analysis, and technical signal overlays — keeping your strategy always ahead of the curve.
 				</p>
 
 				<button className="bg-transparent border-2 border-white px-8 sm:px-10 py-3 sm:py-4 font-semibold rounded-lg hover:bg-white hover:text-[#12132a] transition-all duration-300">

@@ -33,9 +33,7 @@ const Portfolio = () => {
 					Automated Portfolio Tracking
 				</h1>
 				<p className="text-gray-400 leading-relaxed max-w-2xl mx-auto text-sm sm:text-base">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-					consequuntur doloremque aperiam sapiente velit fuga aut eius
-					non, autem perferendis, magnam explicabo.
+					Monitor all your crypto holdings from a single command center. CryptoSphere auto-tracks price changes, sparklines, market caps, and 24-hour volume — giving you a complete picture without the noise.
 				</p>
 
 				{/* STEPS GRID */}

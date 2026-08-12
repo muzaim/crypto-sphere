@@ -1,108 +1,100 @@
 import React from "react";
+import Link from "next/link";
+import { Twitter, Github, Linkedin, Slack } from "lucide-react";
 
 const Footer = () => {
-	const footerData = [
-		{
-			title: "Product",
-			links: [
-				"Overview",
-				"Pricing",
-				"Features",
-				"Releases",
-				"Integrations",
-				"API Docs",
-			],
-		},
-		{
-			title: "Company",
-			links: [
-				"About Us",
-				"Careers",
-				"Press",
-				"Blog",
-				"Contact",
-				"Partners",
-			],
-		},
-		{
-			title: "Resource",
-			links: [
-				"Help Center",
-				"Guides",
-				"Community",
-				"Tutorials",
-				"Webinars",
-				"Status",
-			],
-		},
-		{
-			title: "Social",
-			links: [
-				"LinkedIn",
-				"Twitter",
-				"Instagram",
-				"Facebook",
-				"YouTube",
-				"Dribbble",
-			],
-		},
-	];
-	return (
-		<footer className="relative overflow-hidden bg-gradient-to-b from-[#12132a] to-[#0f1025] text-white px-6 sm:px-10 md:px-20 py-16 border-t border-white/10">
-			{/* glowing background elements */}
-			<div className="absolute -top-32 -right-10 w-60 h-60 md:w-72 md:h-72 bg-[#00ffd5]/10 rounded-full blur-3xl"></div>
-			<div className="absolute bottom-0 left-0 w-72 h-72 md:w-96 md:h-96 bg-[#962f79]/20 rounded-full blur-3xl"></div>
+  const footerData = [
+    {
+      title: "Platform",
+      links: [
+        { label: "Markets", path: "/markets" },
+        { label: "Categories", path: "/categories" },
+        { label: "News Hub", path: "/news" },
+        { label: "Academy", path: "/learn" },
+      ],
+    },
+    {
+      title: "Company",
+      links: [
+        { label: "About Us", path: "/about" },
+        { label: "Contact Us", path: "/contact" },
+        { label: "Watchlist", path: "/watchlist" },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        { label: "API Docs", path: "#" },
+        { label: "Help Center", path: "#" },
+        { label: "Status Page", path: "#" },
+      ],
+    },
+  ];
 
-			{/* Logo + Intro */}
-			<div className="relative z-10 mb-12 flex flex-col md:flex-row md:items-center md:justify-between gap-8 text-center md:text-left">
-				<div className="flex flex-col items-center md:items-start">
-					<h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-[#00ffd5] to-[#962f79] bg-clip-text text-transparent">
-						CryptoSphere
-					</h2>
-					<p className="text-gray-400 mt-2 max-w-md text-sm sm:text-base">
-						Secure. Decentralized. Limitless. Empowering users
-						through blockchain innovation and transparent finance.
-					</p>
-				</div>
+  return (
+    <footer className="bg-[#12132a] border-t border-white/[0.04] pt-20 pb-12 px-6 md:px-12 relative overflow-hidden">
+      {/* Glowing background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#00ffd5]/3 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#962f79]/3 rounded-full blur-3xl pointer-events-none"></div>
 
-				<div className="flex justify-center md:justify-end">
-					<button className="bg-gradient-to-r from-[#962f79] to-[#00ffd5] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition w-full sm:w-auto">
-						Join the Revolution
-					</button>
-				</div>
-			</div>
+      <div className="max-w-7xl mx-auto space-y-16 relative z-10">
+        
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 items-start">
+          
+          {/* Logo & Description */}
+          <div className="lg:col-span-2 space-y-6">
+            <h2 className="text-2xl font-bold tracking-tighter bg-gradient-to-r from-[#00ffd5] to-[#962f79] bg-clip-text text-transparent">
+              CryptoSphere
+            </h2>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
+              Modern cryptocurrency information platform for decentralized market research. Providing real-time metrics, historical charts, and trusted learning resources.
+            </p>
+            {/* Social Icons */}
+            <div className="flex gap-4 text-gray-500">
+              <a href="#" className="hover:text-white transition"><Twitter size={18} /></a>
+              <a href="#" className="hover:text-white transition"><Github size={18} /></a>
+              <a href="#" className="hover:text-white transition"><Linkedin size={18} /></a>
+              <a href="#" className="hover:text-white transition"><Slack size={18} /></a>
+            </div>
+          </div>
 
-			{/* footer links */}
-			<div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 sm:gap-10 text-center sm:text-left justify-items-center sm:justify-items-start items-center">
-				{footerData.map((section, index) => (
-					<div key={index}>
-						<h3 className="text-[#00ffd5] font-semibold text-lg mb-4">
-							{section.title}
-						</h3>
-						<ul className="space-y-2">
-							{section.links.map((link, i) => (
-								<li
-									key={i}
-									className="text-gray-400 hover:text-[#962f79] transition-all duration-300 cursor-pointer hover:translate-x-1"
-								>
-									{link}
-								</li>
-							))}
-						</ul>
-					</div>
-				))}
-			</div>
+          {/* Links Columns */}
+          {footerData.map((section, idx) => (
+            <div key={idx} className="space-y-4">
+              <h3 className="text-xs uppercase tracking-widest text-[#00ffd5] font-bold">
+                {section.title}
+              </h3>
+              <ul className="space-y-2.5">
+                {section.links.map((link, i) => (
+                  <li key={i}>
+                    <Link
+                      href={link.path}
+                      className="text-gray-400 hover:text-white text-sm transition-all duration-300 block hover:translate-x-0.5"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
-			{/* bottom line */}
-			<div className="relative z-10 mt-14 border-t border-white/10 pt-6 text-center text-gray-500 text-xs sm:text-sm">
-				© {new Date().getFullYear()}{" "}
-				<span className="font-semibold text-[#00ffd5]">
-					CryptoSphere Labs
-				</span>
-				. All rights reserved.
-			</div>
-		</footer>
-	);
+        </div>
+
+        {/* Bottom Line */}
+        <div className="border-t border-white/[0.04] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+          <p>© {new Date().getFullYear()} CryptoSphere Labs. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white transition">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition">Terms of Service</a>
+            <a href="#" className="hover:text-white transition">Cookie Settings</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

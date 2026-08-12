@@ -26,11 +26,8 @@ const Testimonials = () => {
 				<h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
 					Testimonials
 				</h1>
-				<p className="max-w-xl sm:max-w-2xl text-gray-300 leading-relaxed text-sm sm:text-base">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Soluta doloremque dolor cum cumque quisquam officiis earum!
-					Ratione, error minus. Aut ipsam necessitatibus laborum
-					obcaecati! Vitae magnam quas iusto aliquid mollitia!
+				<p className="max-w-xl sm:max-w-2xl text-gray-400 leading-relaxed text-xs sm:text-sm">
+					Hear from professional traders, researchers, and blockchain enthusiasts who leverage CryptoSphere daily for real-time market telemetry and analytics.
 				</p>
 			</div>
 

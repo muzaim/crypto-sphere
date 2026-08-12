@@ -10,14 +10,7 @@ const Member = () => {
 					Invite team members & enlarge your groups
 				</h1>
 				<p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl mx-auto md:mx-0">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Dolores tenetur, ipsa exercitationem, labore assumenda
-					voluptate tempore, fugiat quaerat expedita aperiam eligendi.
-					Unde sapiente repellendus inventore voluptatibus ipsa quis
-					doloribus voluptas minima aliquid omnis, aut suscipit
-					placeat necessitatibus, dolor expedita laborum rem.
-					Voluptatem numquam eaque similique, earum nihil saepe
-					necessitatibus tempore.
+					Collaborate effortlessly by inviting teammates to your shared workspace. Manage roles, track portfolio movements, and align your crypto strategy with everyone in real-time across any device.
 				</p>
 				<button className="bg-transparent border-2 border-white px-8 sm:px-10 py-3 sm:py-5 font-semibold transition ease-in-out duration-300 hover:bg-white hover:text-[#12132a]">
 					Explore Now

@@ -55,10 +55,7 @@ const Support = () => {
 					Make every step user-centric
 				</h1>
 				<p className="max-w-2xl text-gray-300 leading-relaxed text-sm sm:text-base px-2 sm:px-0">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Soluta doloremque dolor cum cumque quisquam officiis earum!
-					Ratione, error minus. Aut ipsam necessitatibus laborum
-					obcaecati! Vitae magnam quas iusto aliquid mollitia!
+					From dedicated technical support to curated onboarding flows, every touchpoint of CryptoSphere is designed around clarity, speed, and user confidence in the world of decentralized finance.
 				</p>
 			</div>
 
